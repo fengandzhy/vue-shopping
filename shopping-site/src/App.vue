@@ -1,14 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <header-index></header-index>
 </template>
 
 <script>
 
-
+import HeaderIndex from "@/components/header/headerIndex.vue";
 export default {
   name: 'App',
   components: {
-
+    HeaderIndex
   }
 }
 </script>
