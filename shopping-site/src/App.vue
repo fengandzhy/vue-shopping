@@ -1,14 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <header-index></header-index>
 </template>
 
 <script>
 
-
+import HeaderIndex from "@/components/header/headerIndex.vue";
 export default {
   name: 'App',
   components: {
-
+    HeaderIndex
   }
 }
 </script>
@@ -20,6 +20,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  //margin-top: 60px;
 }
 </style>
