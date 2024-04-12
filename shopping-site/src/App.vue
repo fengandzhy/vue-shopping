@@ -1,14 +1,17 @@
 <template>
   <header-index></header-index>
+  <footer-index></footer-index>
 </template>
 
 <script>
 
 import HeaderIndex from "@/components/header/headerIndex.vue";
+import FooterIndex from "@/components/footer/footerIndex.vue";
 export default {
   name: 'App',
   components: {
-    HeaderIndex
+    HeaderIndex,
+    FooterIndex
   }
 }
 </script>
