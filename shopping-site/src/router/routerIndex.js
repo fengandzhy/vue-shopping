@@ -13,19 +13,23 @@ const router = createRouter({
     routes: [
         {
             path:'/home',
-            component: Home
+            component: Home,
+            meta: {show:true}
         },
         {
             path:'/register',
-            component: Register
+            component: Register,
+            meta: {show:false}
         },
         {
             path:'/login',
-            component: Login
+            component: Login,
+            meta: {show:false}
         },
         {
             path:'/search',
-            component: Search
+            component: Search,
+            meta: {show:true}
         },
         {
             path: '/:catchAll(.*)',
