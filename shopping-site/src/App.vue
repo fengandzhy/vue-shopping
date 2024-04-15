@@ -1,7 +1,7 @@
 <template>
   <header-index></header-index>
   <router-view></router-view>
-  <footer-index></footer-index>
+  <footer-index v-show="this.$route.path=='/home' || this.$route.path=='/search'"></footer-index>
 </template>
 
 <script>
