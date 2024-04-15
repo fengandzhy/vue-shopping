@@ -1,5 +1,6 @@
 <template>
   <header-index></header-index>
+  <router-view></router-view>
   <footer-index></footer-index>
 </template>
 
