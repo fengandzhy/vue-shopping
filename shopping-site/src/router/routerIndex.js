@@ -26,6 +26,10 @@ const router = createRouter({
         {
             path:'/search',
             component: Search
+        },
+        {
+            path: '/:catchAll(.*)',
+            redirect: '/home'
         }
     ],
 });
