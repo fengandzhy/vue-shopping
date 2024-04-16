@@ -32,7 +32,7 @@
       </h1>
       <div class="searchArea">
         <form action="###" class="searchForm">
-          <input type="text" id="autocomplete" class="input-error input-xxlarge" />
+          <input type="text" id="autocomplete" class="input-error input-xxlarge" v-model="keywords"/>
           <button class="sui-btn btn-xlarge btn-danger" type="button" @click="goSearch">搜索</button>
         </form>
       </div>
@@ -40,15 +40,24 @@
   </header>
 </template>
 <script>
+import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 export default {
   setup() {
     const router = useRouter();
+    const keywords = ref('');  // 初始化 keyword 为响应式引用，并给予默认值（如空字符串）
     const goSearch = () => {
-      router.push('/search');
+      // router.push('/search/'+ keywords.value);
+      router.push({
+        name:'search',
+        params: {keywords: keywords.value},
+        query: {query: keywords.value}
+      })
+
     };
     return {
       goSearch,
+      keywords
     };
   },
 };

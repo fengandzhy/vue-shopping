@@ -27,9 +27,11 @@ const router = createRouter({
             meta: {show:false}
         },
         {
-            path:'/search',
+            path:'/search/:keywords',
+            // path:'/search',
             component: Search,
-            meta: {show:true}
+            meta: {show:true},
+            name: 'search'
         },
         {
             path: '/:catchAll(.*)',
