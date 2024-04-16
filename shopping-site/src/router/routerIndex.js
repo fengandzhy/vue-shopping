@@ -27,7 +27,7 @@ const router = createRouter({
             meta: {show:false}
         },
         {
-            path:'/search',
+            path:'/search/:keywords',
             component: Search,
             meta: {show:true}
         },

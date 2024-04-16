@@ -45,10 +45,10 @@ import { useRouter } from 'vue-router';
 export default {
   setup() {
     const router = useRouter();
-    const goSearch = () => {
-      router.push('/search');
-    };
     const keywords = ref('');  // 初始化 keyword 为响应式引用，并给予默认值（如空字符串）
+    const goSearch = () => {
+      router.push('/search/'+ keywords.value);
+    };
     return {
       goSearch,
       keywords
