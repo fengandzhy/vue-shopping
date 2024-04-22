@@ -49,10 +49,10 @@ export default {
     const goSearch = () => {
       // router.push('/search/'+ keywords.value);
       router.push({
-        name:'search',
+        name:'search', // 在 router 当中必须要有个name 这个属性
         params: {keywords: keywords.value},
         query: {query: keywords.value}
-      })
+      });
 
     };
     return {
