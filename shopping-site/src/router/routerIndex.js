@@ -27,7 +27,7 @@ const router = createRouter({
             meta: {show:false}
         },
         {
-            path:'/search/:keywords',
+            path:'/search/:keywords?', // 加上问好就表示可传可不传
             // path:'/search',
             component: Search,
             meta: {show:true},
